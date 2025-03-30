@@ -1,6 +1,6 @@
 let userConfig = undefined
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./v0-user-next.config.js').then(m => m.default || m);
 } catch (e) {
   // ignore error
 }
@@ -23,26 +23,30 @@ const nextConfig = {
   },
 }
 
-mergeConfig(nextConfig, userConfig)
-
-function mergeConfig(nextConfig, userConfig) {
+function mergeConfig(baseConfig, userConfig) {
   if (!userConfig) {
-    return
+    return baseConfig;
   }
+
+  const mergedConfig = { ...baseConfig };
 
   for (const key in userConfig) {
     if (
-      typeof nextConfig[key] === 'object' &&
-      !Array.isArray(nextConfig[key])
+      typeof baseConfig[key] === 'object' &&
+      !Array.isArray(baseConfig[key])
     ) {
-      nextConfig[key] = {
-        ...nextConfig[key],
+      mergedConfig[key] = {
+        ...baseConfig[key],
         ...userConfig[key],
       }
     } else {
-      nextConfig[key] = userConfig[key]
+      mergedConfig[key] = userConfig[key]
     }
   }
+  
+  return mergedConfig;
 }
 
-export default nextConfig
+const finalConfig = mergeConfig(nextConfig, userConfig);
+
+export default finalConfig

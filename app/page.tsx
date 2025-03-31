@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8">
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <CardHeader>
                   <div className="flex items-center gap-1 text-yellow-500">
                     {[...Array(5)].map((_, j) => (
@@ -130,7 +130,7 @@ export default function Home() {
                   </div>
                 </CardFooter>
               </Card>
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <CardHeader>
                   <div className="flex items-center gap-1 text-yellow-500">
                     {[...Array(5)].map((_, j) => (
@@ -155,7 +155,7 @@ export default function Home() {
                   </div>
                 </CardFooter>
               </Card>
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <CardHeader>
                   <div className="flex items-center gap-1 text-yellow-500">
                     {[...Array(5)].map((_, j) => (
@@ -271,8 +271,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="overflow-hidden rounded-lg">
-                  <div className="aspect-square h-full w-full bg-muted"></div>
+                <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/callum.jpg"
+                    alt="Callum, Founder of VIAA"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -439,7 +443,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 pt-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -456,7 +460,7 @@ export default function Home() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -473,7 +477,7 @@ export default function Home() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -490,7 +494,7 @@ export default function Home() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -507,7 +511,7 @@ export default function Home() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -524,7 +528,7 @@ export default function Home() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -548,9 +552,13 @@ export default function Home() {
         <section id="success-story" className="w-full py-16 md:py-28">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="flex items-center justify-center order-last lg:order-first">
-                <div className="overflow-hidden rounded-lg shadow-lg">
-                  <div className="aspect-square h-full w-full bg-muted"></div>
+              <div className="flex items-center justify-center lg:order-last">
+                <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/success-story.jpg"
+                    alt="VIAA Success Story - PrePlay"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </div>
               <div className="space-y-8">

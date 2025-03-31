@@ -18,19 +18,19 @@ export function CustomerLogo({ name, defaultImage, hoverImage, alt }: CustomerLo
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative aspect-square w-full mb-2 overflow-hidden">
+      <div className="relative aspect-square w-full mb-2 overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
         <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
           <img 
             src={defaultImage} 
             alt={`${alt} logo`} 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
         <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <img 
             src={hoverImage} 
             alt={`${alt} success story`} 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>

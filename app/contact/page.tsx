@@ -61,7 +61,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8">
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -78,7 +78,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -129,7 +129,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -146,7 +146,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -163,7 +163,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -180,7 +180,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
@@ -197,7 +197,7 @@ export default function ContactPage() {
                 </div>
               </Card>
               
-              <Card className="flex flex-col justify-between">
+              <Card className="flex flex-col justify-between review-card">
                 <div className="p-6">
                   <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (

@@ -235,7 +235,7 @@ export default function Home() {
 
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold tracking-tighter">
-                    Built for eCom — by someone in it
+                    BUILT FOR ECOM — BY SOMEONE IN IT
                   </h3>
                   <div className="space-y-4">
                     <p>
@@ -252,7 +252,7 @@ export default function Home() {
 
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold tracking-tighter">
-                    Smarter Support Starts Here
+                    SMARTER SUPPORT STARTS HERE
                   </h3>
                   <div className="space-y-4">
                     <p>

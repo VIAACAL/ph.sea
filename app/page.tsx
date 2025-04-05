@@ -60,42 +60,63 @@ export default function Home() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Streamline tasks. Unlock Growth. Be more productive
+        <section className="w-full pt-20 md:pt-28 lg:pt-32 xl:pt-40 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden">
+          <div className="container px-4 md:px-6 max-w-screen-xl mx-auto">
+            <div className="flex flex-col items-center space-y-8 text-center">
+              <div className="space-y-6 max-w-4xl mt-4 md:mt-8">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+                  Your Customer Support Inbox, Handled <span className="block mt-2 md:mt-4">— From Just $8 USD/Hour.</span>
                 </h1>
-                <div className="mx-auto max-w-[900px] text-muted-foreground md:text-xl space-y-6">
-                  <p className="text-center">
-                    VIAA directly connects you with highly skilled outsourced professionals, experts with extensive
-                    e-commerce experience. These curated professionals enable you to extend work hours through the
-                    weekends, cover holidays, support your existing team, or restructure your current operations. Plus,
-                    you can invest your savings back into the business. These solutions ensure your customers and
-                    business receive the attention they deserve to be successful.
-                  </p>
-                  <p className="text-center font-medium">
-                    Join the forward-thinking brands already transforming the way they work.{" "}
-                    <span className="text-primary">Secure your spot with VIAA today</span>.
+                <div className="mx-auto max-w-[900px] text-muted-foreground">
+                  <p className="text-center text-sm sm:text-base md:text-lg">
+                    Expert eCom agents — pre-vetted, fully trained, and ready to plug in today.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
-                <Button className="w-full sm:w-auto" asChild>
-                  <Link href="/contact">Email</Link>
+              <div className="flex flex-col sm:flex-row gap-5 mt-12 justify-center">
+                <Button className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-md transition-colors items-center justify-center bg-black text-white max-w-fit mx-auto" asChild>
+                  <Link href="/contact">
+                    Contact us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </Link>
                 </Button>
-                <Button variant="outline" className="w-full sm:w-auto" asChild>
-                  <Link href="/contact">WhatsApp</Link>
-                </Button>
+              </div>
+              
+              {/* Trust Banner */}
+              <div className="w-full mt-28 md:mt-40">
+                <p className="text-xs uppercase tracking-wider text-gray-800 font-medium mb-12 text-center">
+                  POWERING CUSTOMER SUPPORT FOR ECOM BRANDS IN AU, NZ & THE US.
+                </p>
+                
+                <div className="flex flex-col items-center max-w-xs mx-auto text-center">
+                  <div className="mb-4">
+                    <div className="flex items-center justify-center">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="h-4 w-4 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      ))}
+                      <span className="text-sm font-medium text-muted-foreground ml-2">4.9 rating</span>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex items-center justify-center">
+                      <span className="text-sm font-medium text-muted-foreground">3K+ hours saved weekly—reinvested in growth</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Client Reviews */}
-        <section className="w-full py-12 md:py-24 bg-muted/50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6 mb-16">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Client Reviews</h2>
@@ -104,81 +125,62 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8">
-              <Card className="flex flex-col justify-between review-card">
-                <CardHeader>
-                  <div className="flex items-center gap-1 text-yellow-500">
+          </div>
+          <div className="container-fluid px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+            <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3 lg:gap-12">
+              <div className="flex flex-col justify-between p-6">
+                <div className="mb-4">
+                  <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
                       <Star key={j} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-6">
                     "VIAA transformed our customer support operations. Response times dropped to 20 minutes, and our
                     local team can now focus on strategic growth. They've helped us maintain our commitment to
                     exceptional service quality."
                   </p>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10"></div>
-                    <div>
-                      <p className="text-sm font-medium">Nick Forge</p>
-                      <p className="text-xs text-muted-foreground">CEO | Future Fulfilment</p>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card className="flex flex-col justify-between review-card">
-                <CardHeader>
-                  <div className="flex items-center gap-1 text-yellow-500">
+                </div>
+                <div>
+                  <p className="text-sm font-medium">Nick Forge</p>
+                  <p className="text-xs text-muted-foreground">CEO | Future Fulfilment</p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-between p-6">
+                <div className="mb-4">
+                  <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
                       <Star key={j} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-6">
                     "A year with VIAA has elevated our entire operation. Their VAs bring unmatched professionalism and
                     expertise, making them an invaluable extension of our team. Highly recommended for businesses
                     seeking quality support."
                   </p>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10"></div>
-                    <div>
-                      <p className="text-sm font-medium">Gabi Nedelko</p>
-                      <p className="text-xs text-muted-foreground">Co-founder | Creative Converters</p>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card className="flex flex-col justify-between review-card">
-                <CardHeader>
-                  <div className="flex items-center gap-1 text-yellow-500">
+                </div>
+                <div>
+                  <p className="text-sm font-medium">Gabi Nedelko</p>
+                  <p className="text-xs text-muted-foreground">Co-founder | Creative Converters</p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-between p-6">
+                <div className="mb-4">
+                  <div className="flex items-center gap-1 text-yellow-500 mb-4">
                     {[...Array(5)].map((_, j) => (
                       <Star key={j} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-6">
                     "VIAA's impact on our operations has been transformative. Their VAs have streamlined our processes
                     and boosted productivity beyond expectations. Their expertise has been instrumental in our growth."
                   </p>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10"></div>
-                    <div>
-                      <p className="text-sm font-medium">Luke Jackson</p>
-                      <p className="text-xs text-muted-foreground">Founder | ScaleUp</p>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
+                </div>
+                <div>
+                  <p className="text-sm font-medium">Luke Jackson</p>
+                  <p className="text-xs text-muted-foreground">Founder | ScaleUp</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -194,7 +196,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-8">
+            <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8">
               {[
                 { title: "Customer Support", description: "24/7 customer service and support for your clients." },
                 {

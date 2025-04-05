@@ -217,55 +217,51 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-8">
-                <div className="space-y-6">
+                <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                     Why I Built VIAA
                   </h2>
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4">
                     <p>
                       I used to manage hundreds of Shopify brands at one of Australia's fastest-growing 3PLs. 
-                      I saw the same thing over and over: <strong className="text-gray-800">founders buried in support tickets</strong>, 
+                      I saw the same thing over and over: <strong>founders buried in support tickets</strong>, 
                       wasting hours on problems that could be solved for $8/hour.
                     </p>
                     <p>
-                      So I built VIAA — <strong className="text-gray-800">a way to scale support without the stress</strong>.
+                      So I built VIAA — <strong>a way to scale support without the stress</strong>.
                     </p>
                   </div>
                 </div>
 
-                <hr className="my-8 border-t border-gray-200" />
-
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold tracking-tighter text-gray-800">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold tracking-tighter">
                     Built for eCom — by someone in it
                   </h3>
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4">
                     <p>
                       I run a Shopify brand myself. Every VIAA assistant is trained to handle 
-                      <strong className="text-gray-800"> the same issues I face daily</strong> — from chargebacks to exchanges to inbox zero.
+                      <strong>the same issues I face daily</strong> — from chargebacks to exchanges to inbox zero.
                     </p>
                     <p>
-                      They use the <strong className="text-gray-800">same AI tools I do</strong>, and they're already trained in your platforms. 
+                      They use the <strong>same AI tools I do</strong>, and they're already trained in your platforms. 
                       No fluff. Just faster responses and less stress on your end.
                     </p>
-                    <p className="font-medium text-gray-800">Scale up or down anytime.</p>
+                    <p><strong>Scale up or down anytime.</strong></p>
                   </div>
                 </div>
 
-                <hr className="my-8 border-t border-gray-200" />
-
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold tracking-tighter text-gray-800">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold tracking-tighter">
                     Smarter Support Starts Here
                   </h3>
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4">
                     <p>
                       We're building AI into every part of our process. Our custom system 
-                      <strong className="text-gray-800"> pulls past tickets</strong>, learns your tone, and updates macros so our agents 
+                      <strong>pulls past tickets</strong>, learns your tone, and updates macros so our agents 
                       sound like they've been on your team for years.
                     </p>
                     <p>
-                      It works across <strong className="text-gray-800">email, WhatsApp, live chat</strong> — wherever your customers are. 
+                      It works across <strong>email, WhatsApp, live chat</strong> — wherever your customers are. 
                       No one-size-fits-all. Just support that scales with your brand.
                     </p>
                   </div>

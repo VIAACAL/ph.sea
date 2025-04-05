@@ -191,35 +191,20 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Comprehensive virtual assistance solutions for your business needs.
-                </p>
               </div>
             </div>
-            <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8">
-              {[
-                { title: "Customer Support", description: "24/7 customer service and support for your clients." },
-                {
-                  title: "Executive Assistance",
-                  description: "Professional assistance for executives and management teams.",
-                },
-                { 
-                  title: "Lead Generation", 
-                  description: "Strategic lead generation and qualification to grow your business." 
-                },
-                {
-                  title: "Bookkeeping",
-                  description: "Professional bookkeeping and financial record management services.",
-                },
-              ].map((service, i) => (
-                <div key={i} className="flex flex-col items-center space-y-2 rounded-lg border p-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <Check className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground text-center">{service.description}</p>
-                </div>
-              ))}
+            <div className="mx-auto max-w-[800px] space-y-6 pt-12">
+              <p>Every eCom founder knows this painful truth: <strong>growth stalls when support can't scale.</strong></p>
+              
+              <p>Support isn't just a box to tick — it's a growth lever. When customers don't get fast, helpful replies, they churn. You lose trust. You lose revenue.</p>
+              
+              <p>That's where VIAA comes in.</p>
+              
+              <p>We plug in fast with <strong>expert VAs trained in Shopify, Gorgias, Zendesk, and more</strong> — ready to start today.</p>
+              
+              <p>We extract past tickets using <strong>custom software</strong> and analyse them with AI to match your brand tone, update macros, and <strong>sound just like you.</strong> That means faster onboarding — and agents who are ready to hit the ground running.</p>
+              
+              <p><strong>Support that feels in-house — without the overhead.</strong></p>
             </div>
           </div>
         </section>

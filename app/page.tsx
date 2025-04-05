@@ -217,42 +217,56 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-8">
-                <div className="space-y-2">
+                <div className="space-y-6">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Who is the Founder of VIAA?
+                    Why I Built VIAA
                   </h2>
-                  <div className="space-y-4">
+                  <div className="space-y-4 text-muted-foreground">
                     <p>
-                      My name is Callum, and VIAA was a natural next step after working as Head Account Manager at
-                      Australia's fastest-growing 3PL. I worked with hundreds of Shopify brands daily, helping them
-                      optimise operations between their stores and fulfilment. Through these personal relationships, I
-                      saw firsthand the biggest challenges Shopify brands face—and I created VIAA as a solution.
+                      I used to manage hundreds of Shopify brands at one of Australia's fastest-growing 3PLs. 
+                      I saw the same thing over and over: <strong className="text-gray-800">founders buried in support tickets</strong>, 
+                      wasting hours on problems that could be solved for $8/hour.
+                    </p>
+                    <p>
+                      So I built VIAA — <strong className="text-gray-800">a way to scale support without the stress</strong>.
                     </p>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold tracking-tighter">What Makes VIAA Different?</h3>
-                  <div className="space-y-4">
+                <hr className="my-8 border-t border-gray-200" />
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold tracking-tighter text-gray-800">
+                    Built for eCom — by someone in it
+                  </h3>
+                  <div className="space-y-4 text-muted-foreground">
                     <p>
-                      I run a Shopify brand myself. This means I actively test and refine real-world solutions before
-                      implementing them for clients. Every VIAA assistant is trained to handle the same issues I face in
-                      my own business, ensuring they're equipped for the realities of e-commerce. They have access to
-                      paid AI tools, to improve productivity—not just reduce costs. With no lock-in contracts, you can
-                      scale up or down as needed.
+                      I run a Shopify brand myself. Every VIAA assistant is trained to handle 
+                      <strong className="text-gray-800"> the same issues I face daily</strong> — from chargebacks to exchanges to inbox zero.
                     </p>
+                    <p>
+                      They use the <strong className="text-gray-800">same AI tools I do</strong>, and they're already trained in your platforms. 
+                      No fluff. Just faster responses and less stress on your end.
+                    </p>
+                    <p className="font-medium text-gray-800">Scale up or down anytime.</p>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold tracking-tighter">The VIAA Vision</h3>
-                  <div className="space-y-4">
+                <hr className="my-8 border-t border-gray-200" />
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold tracking-tighter text-gray-800">
+                    Smarter Support Starts Here
+                  </h3>
+                  <div className="space-y-4 text-muted-foreground">
                     <p>
-                      We're building AI solutions into operations. Our MCP integration allows businesses to connect
-                      large language models directly to their own files and any customer support platform. Unlike AI
-                      tools locked into platforms like Gorgias, Zendesk etc our solution works across email, WhatsApp,
-                      live chat—anywhere. You can customise your company tone, rather than forcing you into a
-                      one-size-fits-all. This is something we haven't seen before, and we're making it possible.
+                      We're building AI into every part of our process. Our custom system 
+                      <strong className="text-gray-800"> pulls past tickets</strong>, learns your tone, and updates macros so our agents 
+                      sound like they've been on your team for years.
+                    </p>
+                    <p>
+                      It works across <strong className="text-gray-800">email, WhatsApp, live chat</strong> — wherever your customers are. 
+                      No one-size-fits-all. Just support that scales with your brand.
                     </p>
                   </div>
                 </div>

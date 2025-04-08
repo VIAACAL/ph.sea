@@ -13,7 +13,13 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-xl">VIAA</div>
+          <div className="flex items-center gap-2">
+            <img
+              src="/viaa-logo.png"
+              alt="VIAA Logo"
+              className="h-16 w-auto"
+            />
+          </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
               Services
@@ -155,7 +161,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg" style={{ height: '350px', width: '350px' }}>
                   <img
-                    src="/inbox_buried_notes.gif"
+                    src="/your-inbox-shouldnt-look-like0-this.gif"
                     alt="Founder buried in support tickets"
                     className="w-full h-full object-cover"
                   />
@@ -509,7 +515,13 @@ export default function Home() {
       </main>
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-6">
-          <div className="flex items-center gap-2 font-bold text-xl">VIAA</div>
+          <div className="flex items-center gap-2">
+            <img
+              src="/viaa-logo.png"
+              alt="VIAA Logo"
+              className="h-16 w-auto"
+            />
+          </div>
           <div className="flex gap-4 text-sm text-muted-foreground">
             <Link href="/privacy" className="hover:underline underline-offset-4">
               Privacy Policy

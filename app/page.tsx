@@ -138,17 +138,19 @@ export default function Home() {
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
               <div className="space-y-4">
-                <p>Every eCom founder knows this painful truth: <strong>growth stalls when support can't scale.</strong></p>
+                <p>Hiring a VA or support agent is easy.</p>
                 
-                <p>Support isn't just a box to tick — it's a growth lever. When customers don't get fast, helpful replies, they churn. You lose trust. You lose revenue.</p>
+                <p>But building a high-performance support system? Most teams can't do that internally.</p>
                 
-                <p>That's where VIAA comes in.</p>
+                <p>Here's what you get with VIAA:</p>
                 
-                <p>We plug in fast with <strong>expert VAs trained in Shopify, Gorgias, Zendesk, and more</strong> — ready to start today.</p>
+                <p>✅ Weekly CS and software/ process reviews from a dedicated Optimisation Manager</p>
                 
-                <p>We extract past tickets using <strong>custom software</strong> and analyse them with AI to match your brand tone, update macros, and <strong>sound just like you.</strong> That means faster onboarding — and agents who are ready to hit the ground running.</p>
+                <p>✅ Your entire ticket history exported + analysed by AI for analysis and streamlined onboarding.</p>
                 
-                <p><strong>Support that feels in-house — without the overhead.</strong></p>
+                <p>✅ Fully-trained VAs who hit KPIs, manage your tools, and actually improve CS. They are vetted from 100's of applicants and tested against my ecommerce company.</p>
+                
+                <p>It's how we helped grow one of Australia's biggest 3PLs globally, working with hundreds of Shopify brands. Now, we've turned it into a premium, done-for-you service.</p>
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg" style={{ height: '350px', width: '350px' }}>
@@ -176,25 +178,15 @@ export default function Home() {
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold tracking-tighter mt-0 mb-4">You Don't Need to Be in the Inbox Anymore.</h3>
+                <p>Before launching VIAA, I was the Executive Account Manager at one of Australia's fastest-growing fulfilment centres. I was in charge of customer support systems across multiple warehouses in Australia and New Zealand, working directly with hundreds of Shopify brands.</p>
                 
-                <p>Whether you're doing support yourself, have one person hanging on by a thread, or you're scaling a team—there's a smarter way.</p>
+                <p>The company's point of difference was customer support — and I helped build the systems from the ground up. From offshore teams to internal workflows, we scaled the model from a national business to a global operation.</p>
                 
-                <p>At VIAA, we give e-commerce brands <strong>plug-and-play customer support VAs</strong> from the Philippines, trained in the real world on your tech stack—including fully optimizing your 3PL software.</p>
+                <p>The systems worked so well that I left to start VIAA — giving eCommerce brands direct access to the exact support frameworks that worked at scale.</p>
                 
-                <p>We run our own Shopify brand, so every VA we place is <strong>tested against real-world standards</strong>—no guesswork, no fluff. Just proven, reliable support.</p>
+                <p>Now, we operate our own eCommerce brand to test every strategy and system in the real world. Our VAs are trained, vetted, and placed with a focus on performance, retention, and brand alignment — whether you're looking for full support coverage or just one experienced assistant to back up your team.</p>
                 
-                <h3 className="text-2xl font-bold tracking-tighter mt-8 mb-4">This means:</h3>
-                
-                <ul className="list-disc pl-5 space-y-2 mb-6">
-                  <li>You stop being the backup support agent when things go sideways.</li>
-                  <li>You keep your current team focused on higher-value work.</li>
-                  <li>You finally get weekend and overflow coverage—without doubling your costs.</li>
-                </ul>
-                
-                <h3 className="text-2xl font-bold tracking-tighter mt-8 mb-4">Flexible. Reliable. Cancel anytime.</h3>
-                
-                <p>Why pay western salaries and benefits for a role that doesn't drive revenue?</p>
+                <p>We're so confident in the service, there are no lock-in contracts. You can cancel anytime.</p>
                 
                 <p><strong>Let us take it off your plate—from $8/hr USD.</strong></p>
               </div>
@@ -384,17 +376,64 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="space-y-6">
-                  <p className="text-lg">
+                  <p>
                     We were deep in the inbox, juggling customer support while trying to grow PrePlay. It was overwhelming — slow replies, missed messages, and no time to think about strategy.
                   </p>
-                  <p className="text-lg">
+                  <p>
                     Then VIAA dropped in the perfect VA — already trained in Gorgias, Shopify, Slack, and ShipHero. They even pulled our past tickets to match our tone with AI. Now we just approved/ tweak their marco suggestions on autopilot!
                   </p>
-                  <p className="text-lg">
+                  <p>
                     Within days, the pressure was off. Support's faster. Customers are happier. And we've finally got space to chase bigger moves.
                   </p>
-                  <p className="text-lg font-semibold">
+                  <p className="font-semibold">
                     This is support that works.
+                  </p>
+                </div>
+                <div className="pt-6">
+                  <Button variant="outline" size="lg" className="font-medium">
+                    Read More Success Stories
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Second Success Story */}
+        <section id="success-story-2" className="w-full py-16 md:py-28 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
+              <div className="flex items-center justify-center">
+                <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/success-story-2.jpg"
+                    alt="VIAA Success Story - Second Client"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2>
+                  <p className="text-muted-foreground md:text-xl leading-relaxed">
+                    How VIAA helped Future Fulfilment streamline customer ops across 150+ brands.
+                  </p>
+                </div>
+                <div className="space-y-6">
+                  <p>
+                    With 150+ brands under management, we needed support that felt personal — not robotic. Customers wanted direct contact, fast answers, and someone who actually knew their business.
+                  </p>
+                  <p>
+                    VIAA made that possible. Their VAs understood Shopify, ShipHero, and Slack inside out — even setting up advanced automation rules and mapping variable shipping rates by postcode.
+                  </p>
+                  <p>
+                    They helped us build a Slack-based support hub, giving brands a dedicated go-to person for everything from returns to order issues. It felt fast, human, and reliable.
+                  </p>
+                  <p>
+                    Now our in-house and 3PL teams stay focused on complex problems — while VIAA keeps the day-to-day running smooth.
+                  </p>
+                  <p className="font-semibold">
+                    This is support that scales.
                   </p>
                 </div>
                 <div className="pt-6">

@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Outsourcing Services",
+  title: "VIAA - Premium Customer Support",
   description: "Empowering businesses with intelligent virtual assistance solutions.",
   generator: 'v0.dev'
 }
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/viaa-logo.png" type="image/png" />
       </head>
       <body className={`${inter.className} w-full`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>

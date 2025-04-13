@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} w-full`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen w-full items-center justify-center">
+          <div className="flex flex-col min-h-screen w-full items-center">
             {children}
           </div>
         </ThemeProvider>

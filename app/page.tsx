@@ -48,7 +48,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full pt-20 md:pt-28 lg:pt-32 xl:pt-40 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden relative">
+        <section className="w-full pt-6 md:pt-10 lg:pt-12 xl:pt-16 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden relative">
           {/* Decorative Image - Clay Hands */}
           <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
             <img 

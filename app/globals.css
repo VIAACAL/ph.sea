@@ -22,6 +22,17 @@
   .review-card:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 10px 10px -5px;
   }
+  
+  /* Mobile-centered accordion styling */
+  @media (max-width: 768px) {
+    .mobile-centered-accordion [data-radix-accordion-trigger] {
+      justify-content: center;
+      text-align: center;
+    }
+    .mobile-centered-accordion [data-radix-accordion-trigger] > * {
+      flex: 0 0 auto;
+    }
+  }
 }
 
 @layer base {

@@ -13,54 +13,35 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img
               src="/viaa-logo.png"
               alt="VIAA Logo"
-              className="h-16 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
-              Services
-            </Link>
-            <Link href="#customers" className="text-sm font-medium transition-colors hover:text-primary">
-              Customers
-            </Link>
-            <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
-              About
-            </Link>
-            <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
-              Pricing
-            </Link>
-            <Link href="#faq" className="text-sm font-medium transition-colors hover:text-primary">
-              FAQ
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm" className="hidden md:flex" asChild>
-              <Link href="/contact">Contact</Link>
-            </Button>
-            <Button size="sm" className="hidden md:flex" asChild>
+          <div className="flex-1 flex justify-center max-w-md mx-auto px-4">
+            <nav className="flex gap-2 sm:gap-3 md:gap-6 overflow-x-auto no-scrollbar">
+              <Link href="#services" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
+                Services
+              </Link>
+              <Link href="#customers" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
+                Customers
+              </Link>
+              <Link href="#about" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
+                About
+              </Link>
+              <Link href="#pricing" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
+                Pricing
+              </Link>
+              <Link href="#faq" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
+                FAQ
+              </Link>
+            </nav>
+          </div>
+          <div className="flex items-center">
+            <Button size="sm" className="text-xs sm:text-sm py-1 px-2 sm:py-2 sm:px-3 h-auto" asChild>
               <Link href="/contact">Get Started</Link>
-            </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
             </Button>
           </div>
         </div>
@@ -143,22 +124,27 @@ export default function Home() {
               </div>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
-              <div className="space-y-4">
-                <p>Hiring a VA or support agent is easy.</p>
+              <div className="space-y-4 text-center lg:text-left">
+                <p>Hiring a VA is easy.</p>
                 
-                <p>But building a high-performance support system? Most teams can't do that internally.</p>
+                <p>Building a high-performance CS system? That's what we do.</p>
                 
-                <p>Here's what you get with VIAA:</p>
+                <p>Here's what makes VIAA different:</p>
                 
-                <p>✅ Weekly CS and software/ process reviews from a dedicated Optimisation Manager</p>
+                <p>✅ AI-onboarded VAs trained on your ticket history — up to speed fast.</p>
                 
-                <p>✅ Your entire ticket history exported + analysed by AI for analysis and streamlined onboarding.</p>
+                <p>✅ No micro-managing. Our VAs hit KPIs, manage your tools, and run support solo.</p>
                 
-                <p>✅ Fully-trained VAs who hit KPIs, manage your tools, and actually improve CS. They are vetted from 100's of applicants and tested against my ecommerce company.</p>
+                <p>✅ Weekly reviews by a CS manager who looks for ways to simplify, speed up, and improve your support flow.</p>
                 
-                <p>It's how we helped grow one of Australia's biggest 3PLs globally, working with hundreds of Shopify brands. Now, we've turned it into a premium, done-for-you service.</p>
+                <p>📈 Helped grow one of Australia's top 3PLs. Now it's a done-for-you service for Shopify brands.</p>
+                
+                <p>Cost:
+                  <br />• <strong>Outsourced via VIAA: AUD 96/day</strong>
+                  <br />• In-house (Australia): AUD 250/day
+                </p>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center mt-12 lg:mt-0">
                 <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg" style={{ height: '350px', width: '350px' }}>
                   <img
                     src="/your-inbox-shouldnt-look-like0-this.gif"
@@ -183,26 +169,53 @@ export default function Home() {
               </div>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
-              <div className="space-y-4">
-                <p>Before launching VIAA, I was the Executive Account Manager at one of Australia's fastest-growing fulfilment centres. I was in charge of customer support systems across multiple warehouses in Australia and New Zealand, working directly with hundreds of Shopify brands.</p>
+              <div className="space-y-6 text-center lg:text-left">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">❌ Most eCom brands hit a point where support becomes a mess:</h3>
+                  <ul className="space-y-3">
+                    <li>❌ Sales spike, support slips. CX tanks.</li>
+                    <li>❌ You're still hiring, training, managing — instead of scaling.</li>
+                    <li>❌ Your team's buried in refunds, tracking updates, "where's my order?" hell.</li>
+                    <li>❌ Local reps cost $60K+ and still don't cover weekends.</li>
+                  </ul>
+                </div>
                 
-                <p>The company's point of difference was customer support — and I helped build the systems from the ground up. From offshore teams to internal workflows, we scaled the model from a national business to a global operation.</p>
-                
-                <p>The systems worked so well that I left to start VIAA — giving eCommerce brands direct access to the exact support frameworks that worked at scale.</p>
-                
-                <p>Now, we operate our own eCommerce brand to test every strategy and system in the real world. Our VAs are trained, vetted, and placed with a focus on performance, retention, and brand alignment — whether you're looking for full support coverage or just one experienced assistant to back up your team.</p>
-                
-                <p>We're so confident in the service, there are no lock-in contracts. You can cancel anytime.</p>
-                
-                <p><strong>Let us take it off your plate—from $8/hr USD.</strong></p>
+                <div>
+                  <h3 className="text-xl font-bold mb-4">✅ Here's what VIAA fixes — fast:</h3>
+                  
+                  <div className="space-y-4">
+                    <p><span className="text-green-500 font-bold">✅</span> <strong>Full CS teams or fractional support</strong> — whatever your brand needs right now.
+                    <br />Some clients plug us in to back up their in-house team. Others hand us the whole thing.</p>
+                    
+                    <p><span className="text-green-500 font-bold">✅</span> <strong>Shopify-trained VAs, vetted from hundreds</strong>, trained with AI, and fully managed by us.
+                    <br />You're not hiring a helper. You're plugging into a system that's built to perform.</p>
+                    
+                    <p><span className="text-green-500 font-bold">✅</span> <strong>Onboarded by AI</strong> — trained on your ticket history.
+                    <br />We extract + analyse thousands of past tickets so our VAs sound like they've been on your team for years — from day one.</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="relative w-full max-w-md overflow-hidden" style={{ height: '350px', width: '350px' }}>
-                  <img
-                    src="/clay-hands-2.png"
-                    alt="Decorative clay hands illustration"
-                    className="w-full h-full object-contain bg-transparent"
-                  />
+              
+              <div className="lg:flex lg:flex-col mt-12 lg:mt-0">
+                <div className="flex items-center justify-center mb-8">
+                  <div className="relative w-full max-w-md overflow-hidden" style={{ height: '350px', width: '350px' }}>
+                    <img
+                      src="/clay-hands-2.png"
+                      alt="Decorative clay hands illustration"
+                      className="w-full h-full object-contain bg-transparent"
+                    />
+                  </div>
+                </div>
+                
+                <div className="space-y-4 mt-4 text-center lg:text-left">
+                  <p><span className="text-green-500 font-bold">✅</span> <strong>Shared Management.</strong>
+                  <br />A dedicated optimisation manager tracks KPIs, reviews workflows weekly, and makes efficiency suggestions. You stay out of the weeds.</p>
+                  
+                  <p><span className="text-green-500 font-bold">✅</span> <strong>No more inbox chaos</strong> during launches, weekends, or viral spikes.
+                  <br />You get consistent coverage that flexes with demand.</p>
+                  
+                  <p><span className="text-green-500 font-bold">✅</span> <strong>We're cheaper than in-house</strong> — and way more scalable.
+                  <br />From $8/hr USD, fully managed. Cancel anytime. No long-term contracts.</p>
                 </div>
               </div>
             </div>
@@ -210,18 +223,20 @@ export default function Home() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing" className="w-full py-6 md:py-12">
+        <section id="pricing" className="w-full py-12 md:py-24 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Pricing</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Expert Customer Support
+                </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Flexible plans to meet your business needs.
+                  Without the expert price.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8 max-w-5xl">
-              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background">
+              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-3 md:order-1">
                 <div className="p-6">
                   <h3 className="text-2xl font-bold">Standard</h3>
                   <p className="text-sm text-muted-foreground mt-1">Less than 20 hours pw</p>
@@ -260,12 +275,20 @@ export default function Home() {
                       <span>Screen monitoring of VA & analytics</span>
                     </li>
                   </ul>
-                  <Button className="mt-8 w-full" asChild>
-                    <Link href="/contact">Get started</Link>
-                  </Button>
+                  <div className="mt-8 flex justify-end">
+                    <div className="w-full flex">
+                      <div className="w-1/6"></div>
+                      <div className="w-1/3"></div>
+                      <div className="flex-1 flex justify-end">
+                        <Button className="w-auto" asChild>
+                          <Link href="/contact">Get started</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="relative flex flex-col overflow-hidden rounded-lg border-2 border-primary bg-background shadow-lg">
+              <div className="relative flex flex-col overflow-hidden rounded-lg border-2 border-primary bg-background shadow-lg order-2 md:order-2">
                 <div className="absolute right-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
                   Popular
                 </div>
@@ -307,12 +330,20 @@ export default function Home() {
                       <span>Screen monitoring of VA & analytics</span>
                     </li>
                   </ul>
-                  <Button className="mt-8 w-full" asChild>
-                    <Link href="/contact">Get started</Link>
-                  </Button>
+                  <div className="mt-8 flex justify-end">
+                    <div className="w-full flex">
+                      <div className="w-1/6"></div>
+                      <div className="w-1/3"></div>
+                      <div className="flex-1 flex justify-end">
+                        <Button className="w-auto" asChild>
+                          <Link href="/contact">Get started</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background">
+              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-1 md:order-3">
                 <div className="p-6">
                   <h3 className="text-2xl font-bold">Enterprise</h3>
                   <p className="text-sm text-muted-foreground mt-1">42 hours + pw</p>
@@ -351,9 +382,17 @@ export default function Home() {
                       <span>Screen monitoring of VA & analytics</span>
                     </li>
                   </ul>
-                  <Button className="mt-8 w-full" asChild>
-                    <Link href="/contact">Get started</Link>
-                  </Button>
+                  <div className="mt-8 flex justify-end">
+                    <div className="w-full flex">
+                      <div className="w-1/6"></div>
+                      <div className="w-1/3"></div>
+                      <div className="flex-1 flex justify-end">
+                        <Button className="w-auto" asChild>
+                          <Link href="/contact">Get started</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -374,7 +413,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="space-y-8">
+              <div className="space-y-8 text-center md:text-left">
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2>
                   <p className="text-muted-foreground md:text-xl leading-relaxed">
@@ -406,9 +445,17 @@ export default function Home() {
         </section>
 
         {/* Second Success Story */}
-        <section id="success-story-2" className="w-full py-16 md:py-28 bg-muted/50">
+        <section id="success-story-2" className="w-full py-12 md:py-24 bg-muted/50">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  How VIAA helped Future Fulfilment streamline customer ops across 150+ brands.
+                </p>
+              </div>
+            </div>
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center pt-12">
               <div className="flex items-center justify-center">
                 <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg">
                   <img
@@ -418,13 +465,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2>
-                  <p className="text-muted-foreground md:text-xl leading-relaxed">
-                    How VIAA helped Future Fulfilment streamline customer ops across 150+ brands.
-                  </p>
-                </div>
+              <div className="space-y-8 text-center md:text-left">
                 <div className="space-y-6">
                   <p>
                     With 150+ brands under management, we needed support that felt personal — not robotic. Customers wanted direct contact, fast answers, and someone who actually knew their business.
@@ -452,8 +493,47 @@ export default function Home() {
           </div>
         </section>
 
+        {/* AI Section */}
+        <section id="ai" className="w-full py-12 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  How VIAA is using AI
+                </h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  Customer Support that adapts fast & works independently.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center pt-12 pb-8">
+              <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
+                <div style={{
+                  maxWidth: '100%',
+                  background: 'transparent',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <img
+                    src="/ai-example-2.png"
+                    alt="VIAA AI Implementation"
+                    className="w-auto h-auto"
+                    style={{
+                      maxWidth: '100%',
+                      borderRadius: '12px',
+                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                      marginTop: '10px',
+                      marginBottom: '10px'
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
-        <section id="faq" className="w-full py-12 md:py-24">
+        <section id="faq" className="w-full py-12 md:py-24 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -466,7 +546,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto max-w-3xl pt-12">
-              <Accordion type="single" collapsible className="w-full">
+              <Accordion type="single" collapsible className="w-full mobile-centered-accordion">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Can I cancel anytime?</AccordionTrigger>
                   <AccordionContent>

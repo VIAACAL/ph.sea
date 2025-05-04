@@ -65,7 +65,7 @@ export default function Home() {
                 </h1>
                 <div className="mx-auto max-w-[900px] text-muted-foreground">
                   <p className="text-center text-sm sm:text-base md:text-lg font-medium text-black relative z-10 px-1 py-0.5 rounded backdrop-blur-sm bg-white/40 shadow-sm inline-block">
-                    Expert eCom agents — pre-vetted, fully trained, and ready to plug in today.
+                    Virtual assistant professionals, trained on your software stack and ready to start today.
                   </p>
                 </div>
               </div>
@@ -127,18 +127,18 @@ export default function Home() {
               <div className="space-y-4 text-center lg:text-left">
                 <p>Hiring a VA is easy.</p>
                 
-                <p>Building a high-performance CS system? That's what we do.</p>
+                <p>Finding the top 0.1 % from 1,000+ applicants each week — that’s VIAA.</p>
+
+                <p>Here’s what makes VIAA different:</p>
                 
-                <p>Here's what makes VIAA different:</p>
+                <p>✅ Founder owns an e-commerce brand and understands what’s working today.</p>
                 
-                <p>✅ AI-onboarded VAs trained on your ticket history — up to speed fast.</p>
+                <p>✅ We set clear targets from day one, maintain them consistently, and suggest improvements that boost efficiency.</p>
                 
-                <p>✅ No micro-managing. Our VAs hit KPIs, manage your tools, and run support solo.</p>
+                <p>✅ Real-time comms — message our business group chat for an immediate answer.</p>
                 
-                <p>✅ Weekly reviews by a CS manager who looks for ways to simplify, speed up, and improve your support flow.</p>
-                
-                <p>📈 Helped grow one of Australia's top 3PLs. Now it's a done-for-you service for Shopify brands.</p>
-                
+                <p>📈 Helped grow one of Australia’s top 3 PLs — now a done-for-you service for Shopify brands.</p>
+
                 <p>Cost:
                   <br />• <strong>Outsourced via VIAA: AUD 96/day</strong>
                   <br />• In-house (Australia): AUD 250/day
@@ -171,27 +171,26 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
               <div className="space-y-6 text-center lg:text-left">
                 <div>
-                  <h3 className="text-xl font-bold mb-4">❌ Most eCom brands hit a point where support becomes a mess:</h3>
+                  <h3 className="text-xl font-bold mb-4">Problems</h3>
                   <ul className="space-y-3">
-                    <li>❌ Sales spike, support slips. CX tanks.</li>
-                    <li>❌ You're still hiring, training, managing — instead of scaling.</li>
-                    <li>❌ Your team's buried in refunds, tracking updates, "where's my order?" hell.</li>
-                    <li>❌ Local reps cost $60K+ and still don't cover weekends.</li>
+                    <li>❌ Sales spike, support slips — sick days, need weekend coverage.</li>
+                    <li>❌ Still hiring, training, managing instead of scaling.</li>
+                    <li>❌ Inbox buried in refunds, size changes, shipping-address edits.</li>
+                    <li>❌ Local reps cost A$60 k+ and clock off at 5 p.m.</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-bold mb-4">✅ Here's what VIAA fixes — fast:</h3>
+                  <h3 className="text-xl font-bold mb-4">Solutions</h3>
                   
                   <div className="space-y-4">
-                    <p><span className="text-green-500 font-bold">✅</span> <strong>Full CS teams or fractional support</strong> — whatever your brand needs right now.
-                    <br />Some clients plug us in to back up their in-house team. Others hand us the whole thing.</p>
+                    <p><span className="text-green-500 font-bold">✅</span> Pre-curated experts across every major help-desk platform are on standby and can jump in today.</p>
                     
-                    <p><span className="text-green-500 font-bold">✅</span> <strong>Shopify-trained VAs, vetted from hundreds</strong>, trained with AI, and fully managed by us.
-                    <br />You're not hiring a helper. You're plugging into a system that's built to perform.</p>
+                    <p><span className="text-green-500 font-bold">✅</span> We vet thousands for relevant experience, solid tech, and confident personalities — you stay focused on growth.</p>
                     
-                    <p><span className="text-green-500 font-bold">✅</span> <strong>Onboarded by AI</strong> — trained on your ticket history.
-                    <br />We extract + analyse thousands of past tickets so our VAs sound like they've been on your team for years — from day one.</p>
+                    <p><span className="text-green-500 font-bold">✅</span> Professional VIAA VAs clear the queue daily, leverage the latest ChatGPT o3 to troubleshoot, and liaise with your 3PL to keep CX exceptional.</p>
+                    
+                    <p><span className="text-green-500 font-bold">✅</span> Fraction of that spend, with no surcharges for weekends, nights, or public holidays.</p>
                   </div>
                 </div>
               </div>
@@ -205,17 +204,6 @@ export default function Home() {
                       className="w-full h-full object-contain bg-transparent"
                     />
                   </div>
-                </div>
-                
-                <div className="space-y-4 mt-4 text-center lg:text-left">
-                  <p><span className="text-green-500 font-bold">✅</span> <strong>Shared Management.</strong>
-                  <br />A dedicated optimisation manager tracks KPIs, reviews workflows weekly, and makes efficiency suggestions. You stay out of the weeds.</p>
-                  
-                  <p><span className="text-green-500 font-bold">✅</span> <strong>No more inbox chaos</strong> during launches, weekends, or viral spikes.
-                  <br />You get consistent coverage that flexes with demand.</p>
-                  
-                  <p><span className="text-green-500 font-bold">✅</span> <strong>We're cheaper than in-house</strong> — and way more scalable.
-                  <br />From $8/hr USD, fully managed. Cancel anytime. No long-term contracts.</p>
                 </div>
               </div>
             </div>
@@ -417,21 +405,15 @@ export default function Home() {
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2>
                   <p className="text-muted-foreground md:text-xl leading-relaxed">
-                    How VIAA helped PrePlay scale without the burnout.
+                    How VIAA enables PrePlay to grow.
                   </p>
                 </div>
                 <div className="space-y-6">
                   <p>
-                    We were deep in the inbox, juggling customer support while trying to grow PrePlay. It was overwhelming — slow replies, missed messages, and no time to think about strategy.
+                    At PrePlay, we handed customer support over to VIAA so we could stay focused on recording our podcast and growing the brand. Customer enquiries, returns, and logistics questions are now handled end-to-end, freeing us to create without distraction.
                   </p>
                   <p>
-                    Then VIAA dropped in the perfect VA — already trained in Gorgias, Shopify, Slack, and ShipHero. They even pulled our past tickets to match our tone with AI. Now we just approved/ tweak their marco suggestions on autopilot!
-                  </p>
-                  <p>
-                    Within days, the pressure was off. Support's faster. Customers are happier. And we've finally got space to chase bigger moves.
-                  </p>
-                  <p className="font-semibold">
-                    This is support that works.
+                    Our VA was up to speed on day one—already fluent in Gorgias and ShipHero, with perfect English. She clears the inbox daily, liaises with our manufacturer and 3PL, and sends a concise wrap-up in WhatsApp each night. This is support that works.
                   </p>
                 </div>
                 <div className="pt-6">
@@ -502,7 +484,7 @@ export default function Home() {
                   How VIAA is using AI
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Customer Support that adapts fast & works independently.
+                  Every VIAA VA is trained on ChatGPT Enterprise (o3) — the highest-tier model — so they can resolve issues effectively/ independently.
                 </p>
               </div>
             </div>

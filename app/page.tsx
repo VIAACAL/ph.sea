@@ -63,7 +63,7 @@ export default function Home() {
           <div className="container px-4 md:px-6 max-w-screen-xl mx-auto relative z-10">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl mt-4 md:mt-8">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/tight">
+                <h1 className="text-4xl font-black tracking-tighter sm:font-bold sm:text-5xl md:text-6xl lg:text-7xl/tight">
                   Top 1% Virtual Assistants
                 </h1>
                 <div className="mx-auto max-w-[900px]">

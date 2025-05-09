@@ -51,7 +51,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full pt-12 md:pt-20 lg:pt-24 xl:pt-28 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden relative bg-background text-black">
+        <section className="w-full pt-12 md:pt-20 lg:pt-24 xl:pt-28 pb-6 md:pb-12 lg:pb-16 xl:pb-20 overflow-hidden relative bg-background text-black"> {/* Reduced bottom padding */}
           {/* Decorative Image - Clay Hands Removed */}
           {/* <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
             <img 
@@ -147,7 +147,7 @@ export default function Home() {
               </div>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
-              <div className="space-y-4 text-center lg:text-left">
+              <div className="space-y-4 text-center lg:text-left order-2 lg:order-1 mt-12 lg:mt-0">
                 <p>Hiring a VA is easy.</p>
                 
                 <p>Finding the top 0.1 % from 1,000+ applicants each week — that’s VIAA.</p>
@@ -168,9 +168,9 @@ export default function Home() {
                 </p>
 
                 {/* Additional Services Section */}
-                <div className="mt-48 text-center lg:text-left"> {/* Significantly Increased top margin */}
-                  <h3 className="text-xl font-semibold mb-4">Additional Services</h3>
-                  <div className="space-y-5 pb-16 md:pb-24"> {/* Increased space between links and further increased bottom padding */}
+                <div className="mt-20 text-center lg:text-left"> {/* Adjusted top margin */}
+                  <h3 className="text-xl font-semibold mb-6">Additional Services</h3> 
+                  <div className="space-y-5 pb-16 md:pb-24"> 
                     <p>
                       <Link href="/lead-generation" className="text-blue-600 dark:text-blue-400 hover:underline">
                         Cold Outreach Lead Generation
@@ -186,13 +186,23 @@ export default function Home() {
                         AI Agents
                       </Link>
                     </p>
+                    <p>
+                      <Link href="/web-data-scraping" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Web Data Scraping
+                      </Link>
+                    </p>
+                    <p>
+                      <Link href="/full-stack-support-ops" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Full-Stack Support Ops
+                      </Link>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="flex items-stretch justify-center mt-12 lg:mt-0"> {/* Changed items-center to items-stretch */}
+              <div className="flex items-stretch justify-center order-1 lg:order-2"> {/* Changed items-center to items-stretch */}
                 <ServicesVideoPlayer
                   src="/copy_5C8C7FF0-9696-486C-AEE7-07ACFA2D2E62.MP4"
-                  className="w-full h-full object-cover rounded-lg" 
+                  className="w-full h-full object-cover rounded-lg"
                   // Removed fixed style from here, will let parent control height
                 />
               </div>
@@ -212,7 +222,7 @@ export default function Home() {
               </div>
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
-              <div className="space-y-6 text-center lg:text-left">
+              <div className="space-y-6 text-center lg:text-left order-2 lg:order-1 mt-12 lg:mt-0">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Problems</h3>
                   <ul className="space-y-3">
@@ -238,13 +248,13 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="lg:flex lg:flex-col mt-12 lg:mt-0 h-full"> {/* Added h-full to parent */}
-                <div className="flex items-center justify-center mb-8 h-full"> {/* Added h-full */}
-                  <div className="relative w-full max-w-md overflow-hidden h-full"> {/* Added h-full */}
+              <div className="lg:flex lg:flex-col order-1 lg:order-2"> {/* Removed h-full for simplicity, let content define height on mobile */}
+                <div className="flex items-center justify-center mb-8"> {/* Removed h-full */}
+                  <div className="relative w-full max-w-md overflow-hidden"> {/* Removed h-full */}
                     <img
-                      src="/WhatsApp.gif"
+                      src="/whatsapp.gif" // Corrected to lowercase
                       alt="WhatsApp animation"
-                      className="w-full h-full object-contain bg-transparent rounded-lg" 
+                      className="w-full h-auto object-contain bg-transparent rounded-lg" // Use h-auto to respect aspect ratio
                     />
                   </div>
                 </div>
@@ -430,6 +440,44 @@ export default function Home() {
           </div>
         </section>
 
+        {/* AI Section */}
+        <section id="ai" className="w-full py-12 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  How VIAA is using AI
+                </h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  Your Knowledge base + world's most advanced AI ChatGPT o3 at our expenses = faster resolutions, less founder hand holding and more productive hours rendered.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center pt-12 pb-8">
+              <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
+                <div style={{
+                  maxWidth: '100%',
+                  background: 'transparent',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <img
+                    src="/customgpt.gif"
+                    alt="VIAA AI Custom GPT"
+                    className="w-full h-full object-cover" // Maintaining similar classes
+                    style={{
+                      borderRadius: '12px',
+                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                      marginTop: '10px',
+                      marginBottom: '10px',
+                      maxWidth: '100%' // Ensure it doesn't overflow its container
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Success Story */}
         <section id="success-story" className="w-full py-16 md:py-28">
@@ -512,45 +560,6 @@ export default function Home() {
                   <Button variant="outline" size="lg" className="font-medium">
                     Read More Success Stories
                   </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* AI Section */}
-        <section id="ai" className="w-full py-12 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  How VIAA is using AI
-                </h2>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Your knowledge base + the top-tier ChatGPT-o3 = faster resolutions, lower costs, no founder hand-holding.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center pt-12 pb-8">
-              <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
-                <div style={{
-                  maxWidth: '100%',
-                  background: 'transparent',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <img
-                    src="/customgpt.gif"
-                    alt="VIAA AI Custom GPT"
-                    className="w-full h-full object-cover" // Maintaining similar classes
-                    style={{
-                      borderRadius: '12px',
-                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
-                      marginTop: '10px',
-                      marginBottom: '10px',
-                      maxWidth: '100%' // Ensure it doesn't overflow its container
-                    }}
-                  />
                 </div>
               </div>
             </div>

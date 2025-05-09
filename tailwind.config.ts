@@ -1,4 +1,19 @@
 import type { Config } from "tailwindcss";
+// @ts-ignore
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+import type { PluginAPI } from "tailwindcss/types/config";
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: PluginAPI) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars: Record<string, string> = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val as string])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 
 const config: Config = {
     darkMode: ["class"],
@@ -87,10 +102,16 @@ const config: Config = {
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+        aurora: "aurora 60s linear infinite",
+  		},
+      // keyframes were duplicated, the original is above in the colors section
+  		backgroundImage: {
+  			// 'grid-pattern': '', // Commented out due to syntax error
+  			// 'grid-pattern-light': '' // Commented out due to syntax error
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors], // Re-enabled addVariablesForColors
 };
 export default config;

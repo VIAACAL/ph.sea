@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Star, Check } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { ServicesVideoPlayer } from "@/components/services-video-player" // Import new component
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -39,7 +41,8 @@ export default function Home() {
               </Link>
             </nav>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Button size="sm" className="text-xs sm:text-sm py-1 px-2 sm:py-2 sm:px-3 h-auto" asChild>
               <Link href="/contact">Get Started</Link>
             </Button>
@@ -48,72 +51,92 @@ export default function Home() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full pt-6 md:pt-10 lg:pt-12 xl:pt-16 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden relative">
-          {/* Decorative Image - Clay Hands */}
-          <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
+        <section className="w-full pt-12 md:pt-20 lg:pt-24 xl:pt-28 pb-12 md:pb-24 lg:pb-32 xl:pb-36 overflow-hidden relative bg-background text-black">
+          {/* Decorative Image - Clay Hands Removed */}
+          {/* <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
             <img 
               src="/clay-hands-side.png" 
               alt="Decorative clay hands" 
-              className="max-w-[300px] md:max-w-[400px] lg:max-w-[450px] opacity-95 translate-x-[-10%] sm:translate-x-0"
+              className="max-w-[300px] md:max-w-[400px] lg:max-w-[450px] opacity-50 translate-x-[-10%] sm:translate-x-0"
             />
-          </div>
+          </div> */}
           <div className="container px-4 md:px-6 max-w-screen-xl mx-auto relative z-10">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl mt-4 md:mt-8">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-                  Your Customer Support Inbox, Handled <span className="block mt-2 md:mt-4">— From Just $8 USD/Hour.</span>
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/tight">
+                  Top 1% Virtual Assistants
                 </h1>
-                <div className="mx-auto max-w-[900px] text-muted-foreground">
-                  <p className="text-center text-sm sm:text-base md:text-lg font-medium text-black relative z-10 px-1 py-0.5 rounded backdrop-blur-sm bg-white/40 shadow-sm inline-block">
-                    Virtual assistant professionals, trained on your software stack and ready to start today.
+                <div className="mx-auto max-w-[900px]">
+                  <p className="text-center text-sm md:text-base font-medium text-neutral-700">
+                    Customer Support E-commerce Specialists.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-5 mt-12 justify-center">
-                <Button className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-md transition-colors items-center justify-center bg-black text-white max-w-fit mx-auto" asChild>
+
+              <div className="flex justify-center items-center space-x-[-16px] my-8">
+                {Array.from({ length: 12 }).map((_, i) => (
+                  <img
+                    key={i}
+                    src={`/customers/success-story${i + 1}.png`}
+                    alt={`Customer ${i + 1}`}
+                    className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                  />
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center">
+                <Button 
+                  className="group inline-flex px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-colors items-center justify-center bg-black text-white hover:bg-neutral-800 max-w-fit mx-auto" 
+                  asChild
+                >
                   <Link href="/contact">
                     Contact us
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2 transition-transform duration-200 group-hover:translate-x-1">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
                   </Link>
                 </Button>
               </div>
-              
-              {/* Trust Banner */}
-              <div className="w-full mt-28 md:mt-40">
-                <p className="text-xs uppercase tracking-wider text-black font-semibold mb-12 text-center relative z-10 px-2 py-1 rounded backdrop-blur-sm bg-white/40 shadow-sm inline-block">
-                  POWERING CUSTOMER SUPPORT FOR ECOM BRANDS IN AU, NZ & THE US.
+
+              {/* New Subtitle */}
+              <div className="mt-8 md:mt-10">
+                <p className="text-center text-sm md:text-base font-medium text-neutral-700 dark:text-neutral-300">
+                  Qualified in your software stack.
                 </p>
-                
-                <div className="flex flex-col items-center max-w-xs mx-auto text-center">
-                  <div className="mb-4">
-                    <div className="flex items-center justify-center">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="h-4 w-4 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                        </svg>
-                      ))}
-                      <span className="text-sm font-medium text-muted-foreground ml-2">4.9 rating</span>
+              </div>
+
+              {/* Placeholder for 9 Icons */}
+              <div className="w-full max-w-2xl mx-auto mt-6 mb-12 md:mt-8 md:mb-16">
+                <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+                  {[
+                    "freshdesk.png",
+                    "front.png",
+                    "gorgias.png",
+                    "intercom.png",
+                    "liveagent.png",
+                    "livechat.png",
+                    "reamaze.png",
+                    "zendesk.png",
+                    "zoho.png",
+                  ].map((iconName, i) => (
+                    <div
+                      key={i}
+                      className="w-8 h-8 md:w-10 md:h-10 p-0.5 flex items-center justify-center transition-all duration-200 ease-in-out hover:scale-125 hover:z-10" // Initial size smaller, added transition and hover effects
+                    >
+                      <img
+                        src={`/${iconName}`}
+                        alt={iconName.split('.')[0]}
+                        className="max-w-full max-h-full object-contain rounded-md" 
+                      />
                     </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex items-center justify-center">
-                      <span className="text-sm font-semibold text-black relative z-10 px-1 py-0.5 rounded backdrop-blur-sm bg-white/40 shadow-sm inline-block">3K+ hours saved weekly—reinvested in growth</span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
+              
             </div>
           </div>
         </section>
-
-        {/* Client Reviews */}
-        <div className="w-full py-6 md:py-12">
-          <TestimonialsSection />
-        </div>
 
         {/* Our Services */}
         <section id="services" className="w-full py-12 md:py-24">
@@ -143,15 +166,35 @@ export default function Home() {
                   <br />• <strong>Outsourced via VIAA: AUD 96/day</strong>
                   <br />• In-house (Australia): AUD 250/day
                 </p>
-              </div>
-              <div className="flex items-center justify-center mt-12 lg:mt-0">
-                <div className="relative w-full max-w-md overflow-hidden rounded-lg shadow-lg" style={{ height: '350px', width: '350px' }}>
-                  <img
-                    src="/your-inbox-shouldnt-look-like0-this.gif"
-                    alt="Founder buried in support tickets"
-                    className="w-full h-full object-cover"
-                  />
+
+                {/* Additional Services Section */}
+                <div className="mt-48 text-center lg:text-left"> {/* Significantly Increased top margin */}
+                  <h3 className="text-xl font-semibold mb-4">Additional Services</h3>
+                  <div className="space-y-5 pb-16 md:pb-24"> {/* Increased space between links and further increased bottom padding */}
+                    <p>
+                      <Link href="/lead-generation" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Cold Outreach Lead Generation
+                      </Link>
+                    </p>
+                    <p>
+                      <Link href="/executive-assistants" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Executive Assistants
+                      </Link>
+                    </p>
+                    <p>
+                      <Link href="/ai-agents" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        AI Agents
+                      </Link>
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div className="flex items-stretch justify-center mt-12 lg:mt-0"> {/* Changed items-center to items-stretch */}
+                <ServicesVideoPlayer
+                  src="/copy_5C8C7FF0-9696-486C-AEE7-07ACFA2D2E62.MP4"
+                  className="w-full h-full object-cover rounded-lg" 
+                  // Removed fixed style from here, will let parent control height
+                />
               </div>
             </div>
           </div>
@@ -195,13 +238,13 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="lg:flex lg:flex-col mt-12 lg:mt-0">
-                <div className="flex items-center justify-center mb-8">
-                  <div className="relative w-full max-w-md overflow-hidden" style={{ height: '350px', width: '350px' }}>
+              <div className="lg:flex lg:flex-col mt-12 lg:mt-0 h-full"> {/* Added h-full to parent */}
+                <div className="flex items-center justify-center mb-8 h-full"> {/* Added h-full */}
+                  <div className="relative w-full max-w-md overflow-hidden h-full"> {/* Added h-full */}
                     <img
-                      src="/clay-hands-2.png"
-                      alt="Decorative clay hands illustration"
-                      className="w-full h-full object-contain bg-transparent"
+                      src="/WhatsApp.gif"
+                      alt="WhatsApp animation"
+                      className="w-full h-full object-contain bg-transparent rounded-lg" 
                     />
                   </div>
                 </div>
@@ -211,7 +254,7 @@ export default function Home() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing" className="w-full py-12 md:py-24 bg-muted/50">
+        <section id="pricing" className="w-full py-12 md:py-24"> {/* Removed bg-muted/50 */}
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -427,7 +470,7 @@ export default function Home() {
         </section>
 
         {/* Second Success Story */}
-        <section id="success-story-2" className="w-full py-12 md:py-24 bg-muted/50">
+        <section id="success-story-2" className="w-full py-12 md:py-24"> {/* Removed bg-muted/50 */}
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -484,7 +527,7 @@ export default function Home() {
                   How VIAA is using AI
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Every VIAA VA is trained on ChatGPT Enterprise (o3) — the highest-tier model — so they can resolve issues effectively/ independently.
+                  Your knowledge base + the top-tier ChatGPT-o3 = faster resolutions, lower costs, no founder hand-holding.
                 </p>
               </div>
             </div>
@@ -497,15 +540,15 @@ export default function Home() {
                   justifyContent: 'center'
                 }}>
                   <img
-                    src="/ai-example-2.png"
-                    alt="VIAA AI Implementation"
-                    className="w-auto h-auto"
+                    src="/customgpt.gif"
+                    alt="VIAA AI Custom GPT"
+                    className="w-full h-full object-cover" // Maintaining similar classes
                     style={{
-                      maxWidth: '100%',
                       borderRadius: '12px',
                       boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
                       marginTop: '10px',
-                      marginBottom: '10px'
+                      marginBottom: '10px',
+                      maxWidth: '100%' // Ensure it doesn't overflow its container
                     }}
                   />
                 </div>
@@ -515,7 +558,7 @@ export default function Home() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="w-full py-12 md:py-24 bg-muted/50">
+        <section id="faq" className="w-full py-12 md:py-24"> {/* Removed bg-muted/50 */}
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -574,6 +617,11 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Client Reviews */}
+        <div className="w-full py-6 md:py-12">
+          <TestimonialsSection />
+        </div>
       </main>
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-6">

@@ -2,6 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+// import { AuroraBackground } from "@/components/ui/aurora-background" // Commented out
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,11 +23,13 @@ export default function RootLayout({
         <link rel="icon" href="/viaa-logo.png" type="image/png" />
       </head>
       <body className={`${inter.className} w-full`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen w-full items-center">
-            {children}
-          </div>
-        </ThemeProvider>
+        {/* <AuroraBackground> */}
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+            <div className="flex flex-col min-h-screen w-full items-center">
+              {children}
+            </div>
+          </ThemeProvider>
+        {/* </AuroraBackground> */}
       </body>
     </html>
   )

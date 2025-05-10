@@ -287,17 +287,7 @@ export default function Home() {
                   display: 'flex',
                   justifyContent: 'center'
                 }}>
-                  <img
-                    src="/hubstaff.gif" 
-                    alt="Hubstaff Time Tracking and Screenshots"
-                    className="w-full h-auto object-contain rounded-lg" // Applied similar styling as other working GIFs
-                    style={{
-                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', // borderRadius is now in className
-                      marginTop: '10px',
-                      marginBottom: '10px',
-                      maxWidth: '100%'
-                    }}
-                  />
+                  <img src="/hubstaff.gif" alt="Hubstaff Time Tracking and Screenshots" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
                 </div>
               </div>
             </div>

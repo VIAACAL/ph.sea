@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Star, Check } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+// import { ThemeToggle } from "@/components/theme-toggle" // Removed
 import { ServicesVideoPlayer } from "@/components/services-video-player" // Import new component
 
 import { Button } from "@/components/ui/button"
@@ -41,11 +41,14 @@ export default function Home() {
               </Link>
             </nav>
           </div>
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
+          <div className="flex items-center gap-3">
+            
             <Button size="sm" className="text-xs sm:text-sm py-1 px-2 sm:py-2 sm:px-3 h-auto" asChild>
               <Link href="/contact">Get Started</Link>
             </Button>
+            {/* <a href="https://wa.me/61487216747" target="_blank" rel="noopener noreferrer">
+              <img src="/whatsappicon.png" alt="Chat on WhatsApp" className="h-8 w-8" />
+            </a> */}
           </div>
         </div>
       </header>

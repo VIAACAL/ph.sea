@@ -64,14 +64,24 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center items-center space-x-[-16px] my-8">
-                {Array.from({ length: 12 }).map((_, i) => (
-                  <img
-                    key={i}
-                    src={`/customers/success-story${i + 1}.png`}
-                    alt={`Customer ${i + 1}`}
-                    className="w-12 h-12 rounded-full border-2 border-white object-cover"
-                  />
-                ))}
+                {Array.from({ length: 12 }).map((_, i) => {
+                  // Use placeholder for the 4th item (index 3)
+                  const imgSrc = i === 3 
+                    ? "/placeholder-logo.png" 
+                    : `/customers/success-story${i + 1}.png`;
+                  const altText = i === 3 
+                    ? "" // Empty alt text for placeholder
+                    : `Customer ${i + 1}`;
+                  
+                  return (
+                    <img
+                      key={i}
+                      src={imgSrc}
+                      alt={altText}
+                      className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                    />
+                  );
+                })}
               </div>
               <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center">
                 <Button 

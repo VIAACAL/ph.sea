@@ -23,10 +23,10 @@ const customers = [
     alt: "Keep That Pump"
   },
   {
-    name: "Bye Bambi",
-    defaultImage: "/customers/success-story4.png",
-    hoverImage: "/customers/success-story4-hover.png",
-    alt: "Bye Bambi"
+    name: "",
+    defaultImage: "/placeholder-logo.png",
+    hoverImage: "/placeholder-logo.png",
+    alt: "Customer Logo"
   },
   {
     name: "Creative Converters",

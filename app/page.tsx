@@ -156,7 +156,7 @@ export default function Home() {
                 <div><h3 className="text-xl font-bold mb-4">Problems</h3><ul className="space-y-3"><li>❌ Sales spike, support slips — sick days, need weekend coverage.</li><li>❌ Still hiring, training, managing instead of scaling.</li><li>❌ Inbox buried in refunds, size changes, shipping-address edits.</li><li>❌ Local reps cost A$60 k+ and clock off at 5 p.m.</li></ul></div>
                 <div><h3 className="text-xl font-bold mb-4">Solutions</h3><div className="space-y-4"><p><span className="text-green-500 font-bold">✅</span> Pre-curated experts across every major help-desk platform are on standby and can jump in today.</p><p><span className="text-green-500 font-bold">✅</span> We vet thousands for relevant experience, solid tech, and confident personalities — you stay focused on growth.</p><p><span className="text-green-500 font-bold">✅</span> Professional VIAA VAs clear the queue daily, leverage the latest ChatGPT o3 to troubleshoot, and liaise with your 3PL to keep CX exceptional.</p><p><span className="text-green-500 font-bold">✅</span> Fraction of that spend, with no surcharges for weekends, nights, or public holidays.</p></div></div>
               </div>
-              <div className="lg:flex lg:flex-col order-1 lg:order-2"><div className="flex items-center justify-center mb-8"><div className="relative w-full max-w-md overflow-hidden"><img src="/whatsapp.gif" alt="WhatsApp animation" className="w-full h-auto object-contain bg-transparent rounded-lg"/></div></div></div>
+              <div className="lg:flex lg:flex-col order-1 lg:order-2"><div className="flex items-center justify-center mb-8"><div className="relative w-full max-w-md overflow-hidden"><img src="/placeholder.jpg" alt="WhatsApp animation" className="w-full h-auto object-contain bg-transparent rounded-lg"/></div></div></div>
             </div>
           </div>
         </section>
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="flex justify-center pt-12 pb-8">
               <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
                 <div style={{maxWidth: '100%', background: 'transparent', display: 'flex', justifyContent: 'center'}}>
-                  <img src="/customgpt.gif" alt="VIAA AI Custom GPT" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
+                  <img src="/placeholder.jpg" alt="VIAA AI Custom GPT" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
                 </div>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Home() {
                   display: 'flex',
                   justifyContent: 'center'
                 }}>
-                  <img src="/hubstaff.gif" alt="Hubstaff Time Tracking and Screenshots" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
+                  <img src="/placeholder.jpg" alt="Hubstaff Time Tracking and Screenshots" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
                 </div>
               </div>
             </div>

@@ -13,14 +13,6 @@ const testimonials = [
     websiteUrl: "https://thebootyco.com"
   },
   {
-    name: "Brad CM",
-    company: "Matcha Made",
-    position: "Founder",
-    rating: 5,
-    content: "Having worked with Callum previously, I knew VIAA would deliver excellence. Their customer support solutions have exceeded expectations, bringing efficiency and quality to our operations.\n\nWe're very pleased with the results.",
-    websiteUrl: "https://matchamade.com"
-  },
-  {
     name: "Lachlan Beale",
     company: "Presence Productions",
     position: "Founder",

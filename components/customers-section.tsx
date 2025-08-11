@@ -41,10 +41,10 @@ const customers = [
     alt: "KDJ"
   },
   {
-    name: "Matcha Made",
-    defaultImage: "/customers/success-story7.png",
-    hoverImage: "/customers/success-story7-hover.png",
-    alt: "Matcha Made"
+    name: "",
+    defaultImage: "/placeholder-logo.png",
+    hoverImage: "/placeholder-logo.png",
+    alt: "Customer Logo"
   },
   {
     name: "Preplay",

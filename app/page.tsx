@@ -66,12 +66,12 @@ export default function Home() {
               <div className="flex justify-center items-center space-x-[-16px] my-8">
                 {Array.from({ length: 12 }).map((_, i) => {
                   // Use placeholder for the 4th item (index 3)
-                  const imgSrc = i === 3 
-                    ? "/placeholder-logo.png" 
-                    : `/customers/success-story${i + 1}.png`;
-                  const altText = i === 3 
-                    ? "" // Empty alt text for placeholder
-                    : `Customer ${i + 1}`;
+const imgSrc = i === 3 
+  ? "/placeholder-logo.png" 
+  : `/customers/success-story${i + 1}.png`;
+const altText = i === 3 
+  ? "" // Empty alt text for placeholder
+  : `Customer ${i + 1}`;
                   
                   return (
                     <img
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
               <div className="space-y-4 text-center lg:text-left order-2 lg:order-1 mt-12 lg:mt-0">
-                <p>Hiring a VA is easy.</p><p>Finding the top 0.1 % from 1,000+ applicants each week — that’s VIAA.</p><p>Here’s what makes VIAA different:</p><p>✅ Founder owns an e-commerce brand and understands what’s working today.</p><p>✅ We set clear targets from day one, maintain them consistently, and suggest improvements that boost efficiency.</p><p>✅ Real-time comms — message our business group chat for an immediate answer.</p><p>📈 Helped grow one of Australia’s top 3 PLs — now a done-for-you service for Shopify brands.</p><p>Cost:<br />• <strong>Outsourced via VIAA: AUD 96/day</strong><br />• In-house (Australia): AUD 250/day</p>
+                <p>Hiring a VA is easy.</p><p>Finding the top 0.1 % from 1,000+ applicants each week — that's VIAA.</p><p>Here's what makes VIAA different:</p><p>✅ Founder owns an e-commerce brand and understands what's working today.</p><p>✅ We set clear targets from day one, maintain them consistently, and suggest improvements that boost efficiency.</p><p>✅ Real-time comms — message our business group chat for an immediate answer.</p><p>📈 Helped grow one of Australia's top 3 PLs — now a done-for-you service for Shopify brands.</p><p>Cost:<br />• <strong>Outsourced via VIAA: AUD 96/day</strong><br />• In-house (Australia): AUD 250/day</p>
                 <div className="mt-20 text-center lg:text-left">
                   <h3 className="text-xl font-semibold mb-6">Additional Services</h3> 
                   <div className="space-y-5 pb-16 md:pb-24"> 
@@ -166,9 +166,9 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Expert Customer Support</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">Without the expert price.</p></div></div>
             <div className="mx-auto grid gap-6 pt-12 sm:grid-cols-1 md:grid-cols-3 lg:gap-8 max-w-5xl">
-              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-3 md:order-1"><div className="p-6"><h3 className="text-2xl font-bold">Standard</h3><p className="text-sm text-muted-foreground mt-1">Less than 20 hours pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$11</span><span className="text-5xl font-bold">$10</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Screen monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
-              <div className="relative flex flex-col overflow-hidden rounded-lg border-2 border-primary bg-background shadow-lg order-2 md:order-2"><div className="absolute right-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">Popular</div><div className="p-6"><h3 className="text-2xl font-bold">Pro</h3><p className="text-sm text-muted-foreground mt-1">20-42 hours pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$10</span><span className="text-5xl font-bold">$9</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Screen monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
-              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-1 md:order-3"><div className="p-6"><h3 className="text-2xl font-bold">Enterprise</h3><p className="text-sm text-muted-foreground mt-1">42 hours + pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$9</span><span className="text-5xl font-bold">$8</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Screen monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
+              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-3 md:order-1"><div className="p-6"><h3 className="text-2xl font-bold">Standard</h3><p className="text-sm text-muted-foreground mt-1">Less than 20 hours pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$11</span><span className="text-5xl font-bold">$10</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>HubStaff monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
+              <div className="relative flex flex-col overflow-hidden rounded-lg border-2 border-primary bg-background shadow-lg order-2 md:order-2"><div className="absolute right-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">Popular</div><div className="p-6"><h3 className="text-2xl font-bold">Pro</h3><p className="text-sm text-muted-foreground mt-1">20-42 hours pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$10</span><span className="text-5xl font-bold">$9</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>HubStaff monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
+              <div className="relative flex flex-col overflow-hidden rounded-lg border bg-background order-1 md:order-3"><div className="p-6"><h3 className="text-2xl font-bold">Enterprise</h3><p className="text-sm text-muted-foreground mt-1">42 hours + pw</p><div className="mt-6 flex items-baseline gap-1"><span className="text-muted-foreground line-through text-lg">$9</span><span className="text-5xl font-bold">$8</span><span className="text-sm text-muted-foreground">p/h usd</span></div><ul className="mt-6 space-y-4"><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Client-VA matching</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Onboarding into your systems</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Performance reviews</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>EOD reporting</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>Whatsapp group for daily comms</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>SOP creation of tasks</span></li><li className="flex items-center"><Check className="mr-2 h-4 w-4 text-primary" /><span>HubStaff monitoring of VA & analytics</span></li></ul><div className="mt-8 flex justify-end"><div className="w-full flex"><div className="w-1/6"></div><div className="w-1/3"></div><div className="flex-1 flex justify-end"><Button className="w-auto" asChild><Link href="/contact">Get started</Link></Button></div></div></div></div></div>
             </div>
           </div>
         </section>
@@ -176,7 +176,7 @@ export default function Home() {
         {/* AI Section ... (content remains the same) ... */}
         <section id="ai" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How VIAA is using AI</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">Your Knowledge base + world's most advanced AI ChatGPT o3 at our expenses = faster resolutions, less founder hand holding and more productive hours rendered.</p></div></div>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How VIAA is using AI</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">WORLD'S MOST ADVANCED AI: GPT-5 Thinking (ChatGPT 5) — faster resolutions, less handholding, more productive hours.</p></div></div>
             <div className="flex justify-center pt-12 pb-8">
               <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
                 <div style={{maxWidth: '100%', background: 'transparent', display: 'flex', justifyContent: 'center'}}>
@@ -240,10 +240,7 @@ export default function Home() {
                 <AccordionItem value="item-2">
                   <AccordionTrigger>How do you ensure VA reliability?</AccordionTrigger>
                   <AccordionContent>
-                    We use advanced screen monitoring tools that you have full view access to. Any inactivity
-                    automatically pauses invoicable hours. Additionally, you'll have a dedicated WhatsApp group chat
-                    where you can communicate directly with your VA and our team. We assist with setting up KPIs and
-                    end-of-day reports to ensure accountability and performance tailored to your business.
+                    We run Hubstaff—time & login logs and a 10-minute idle cutoff to prevent idle time from being billed. You'll have a WhatsApp group for quick coordination with your VA and our team. We establish KPIs and EOD reports to drive accountability and results.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
@@ -285,7 +282,7 @@ export default function Home() {
                   Transparency
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Live screenshots, login logs, 5-min idle cut-off—pay only for active work.
+                  Hubstaff tracking, login logs, 10-min idle cutoff—pay only for productive time.
                 </p>
               </div>
             </div>
@@ -297,34 +294,22 @@ export default function Home() {
                   display: 'flex',
                   justifyContent: 'center'
                 }}>
-                  <img src="/placeholder.jpg" alt="Hubstaff Time Tracking and Screenshots" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
+                  <img src="/placeholder.jpg" alt="Hubstaff Tracking" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Client Reviews */}
-        <div className="w-full py-6 md:py-12">
-          <TestimonialsSection />
-        </div>
+        {/* Testimonials Section */}
+        <TestimonialsSection />
       </main>
-      <footer className="w-full border-t py-6">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-6">
-          <div className="flex items-center gap-2">
-            <img
-              src="/viaa-logo.png"
-              alt="VIAA Logo"
-              className="h-16 w-auto"
-            />
-          </div>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground"> {/* Reverted: Removed social icons */}
-            <Link href="/privacy" className="hover:underline underline-offset-4">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:underline underline-offset-4">
-              Terms & Conditions
-            </Link>
+      <footer className="w-full py-6 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <p className="text-sm text-muted-foreground">© 2025 VIAA. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </footer>

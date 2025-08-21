@@ -23,12 +23,6 @@ const customers = [
     alt: "Keep That Pump"
   },
   {
-    name: "",
-    defaultImage: "/placeholder-logo.png",
-    hoverImage: "/placeholder-logo.png",
-    alt: "Customer Logo"
-  },
-  {
     name: "Creative Converters",
     defaultImage: "/customers/success-story5.png",
     hoverImage: "/customers/success-story5-hover.png",
@@ -39,12 +33,6 @@ const customers = [
     defaultImage: "/customers/success-story6.png",
     hoverImage: "/customers/success-story6-hover.png",
     alt: "KDJ"
-  },
-  {
-    name: "",
-    defaultImage: "/placeholder-logo.png",
-    hoverImage: "/placeholder-logo.png",
-    alt: "Customer Logo"
   },
   {
     name: "Preplay",

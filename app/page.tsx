@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { Star, Check } from "lucide-react" // Reverted imports
-// import { ThemeToggle } from "@/components/theme-toggle" // Removed
-import { ServicesVideoPlayer } from "@/components/services-video-player" // Import new component
+import { Star, Check } from "lucide-react" 
+import { ServicesVideoPlayer } from "@/components/services-video-player"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -41,7 +40,7 @@ export default function Home() {
               </Link>
             </nav>
           </div>
-          <div className="flex items-center gap-3"> {/* Reverted: Removed WhatsApp icon */}
+          <div className="flex items-center gap-3">
             <Button size="sm" className="text-xs sm:text-sm py-1 px-2 sm:py-2 sm:px-3 h-auto" asChild>
               <Link href="/contact">Get Started</Link>
             </Button>
@@ -49,7 +48,6 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        {/* Hero Section ... (content remains the same) ... */}
         <section className="w-full pt-12 md:pt-20 lg:pt-24 xl:pt-28 pb-6 md:pb-12 lg:pb-16 xl:pb-20 overflow-hidden relative bg-background text-black">
           <div className="container px-4 md:px-6 max-w-screen-xl mx-auto relative z-10">
             <div className="flex flex-col items-center space-y-8 text-center">
@@ -65,13 +63,12 @@ export default function Home() {
               </div>
               <div className="flex justify-center items-center space-x-[-16px] my-8">
                 {Array.from({ length: 12 }).map((_, i) => {
-                  // Use placeholder for the 4th item (index 3)
-const imgSrc = i === 3 
-  ? "/placeholder-logo.png" 
-  : `/customers/success-story${i + 1}.png`;
-const altText = i === 3 
-  ? "" // Empty alt text for placeholder
-  : `Customer ${i + 1}`;
+                  const imgSrc = i === 3 
+                    ? "/placeholder-logo.png" 
+                    : `/customers/success-story${i + 1}.png`;
+                  const altText = i === 3 
+                    ? "" 
+                    : `Customer ${i + 1}`;
                   
                   return (
                     <img
@@ -117,7 +114,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Our Services ... (content remains the same) ... */}
         <section id="services" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -144,24 +140,21 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Our Customers ... (content remains the same) ... */}
         <CustomersSection />
 
-        {/* About VIAA ... (content remains the same) ... */}
         <section id="about" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Why VIAA?</h2></div></div>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 pt-12">
               <div className="space-y-6 text-center lg:text-left order-2 lg:order-1 mt-12 lg:mt-0">
                 <div><h3 className="text-xl font-bold mb-4">Problems</h3><ul className="space-y-3"><li>❌ Sales spike, support slips — sick days, need weekend coverage.</li><li>❌ Still hiring, training, managing instead of scaling.</li><li>❌ Inbox buried in refunds, size changes, shipping-address edits.</li><li>❌ Local reps cost A$60 k+ and clock off at 5 p.m.</li></ul></div>
-                <div><h3 className="text-xl font-bold mb-4">Solutions</h3><div className="space-y-4"><p><span className="text-green-500 font-bold">✅</span> Pre-curated experts across every major help-desk platform are on standby and can jump in today.</p><p><span className="text-green-500 font-bold">✅</span> We vet thousands for relevant experience, solid tech, and confident personalities — you stay focused on growth.</p><p><span className="text-green-500 font-bold">✅</span> Professional VIAA VAs clear the queue daily, leverage the latest ChatGPT o3 to troubleshoot, and liaise with your 3PL to keep CX exceptional.</p><p><span className="text-green-500 font-bold">✅</span> Fraction of that spend, with no surcharges for weekends, nights, or public holidays.</p></div></div>
+                <div><h3 className="text-xl font-bold mb-4">Solutions</h3><div className="space-y-4"><p><span className="text-green-500 font-bold">✅</span> Pre-curated experts across every major help-desk platform are on standby and can jump in today.</p><p><span className="text-green-500 font-bold">✅</span> We vet thousands for relevant experience, solid tech, and confident personalities — you stay focused on growth.</p><p><span className="text-green-500 font-bold">✅</span> Professional VIAA VAs clear the queue daily, leverage the latest ChatGPT 5/ 5 thinking to troubleshoot, and liaise with your 3PL to keep CX exceptional.</p><p><span className="text-green-500 font-bold">✅</span> Fraction of that spend, with no surcharges for weekends, nights, or public holidays.</p></div></div>
               </div>
               <div className="lg:flex lg:flex-col order-1 lg:order-2"><div className="flex items-center justify-center mb-8"><div className="relative w-full max-w-md overflow-hidden"><img src="/placeholder.jpg" alt="WhatsApp animation" className="w-full h-auto object-contain bg-transparent rounded-lg"/></div></div></div>
             </div>
           </div>
         </section>
 
-        {/* Pricing ... (content remains the same) ... */}
         <section id="pricing" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Expert Customer Support</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">Without the expert price.</p></div></div>
@@ -173,7 +166,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* AI Section ... (content remains the same) ... */}
         <section id="ai" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How VIAA is using AI</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">WORLD'S MOST ADVANCED AI: GPT-5 Thinking (ChatGPT 5) — faster resolutions, less handholding, more productive hours.</p></div></div>
@@ -187,7 +179,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Success Story ... (content remains the same) ... */}
         <section id="success-story" className="w-full py-16 md:py-28">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
@@ -201,7 +192,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Second Success Story ... (content remains the same) ... */}
         <section id="success-story-2" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center"><div className="space-y-2"><h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Story</h2><p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">How VIAA helped Future Fulfilment streamline customer ops across 150+ brands.</p></div></div>
@@ -215,8 +205,7 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* FAQ */}
-        <section id="faq" className="w-full py-12 md:py-24"> {/* Removed bg-muted/50 */}
+        <section id="faq" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -273,7 +262,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Transparency Section - UNCOMMENTED AND MOVED HERE */}
         <section id="transparency" className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -288,12 +276,7 @@ const altText = i === 3
             </div>
             <div className="flex justify-center pt-12 pb-8">
               <div className="relative" style={{ width: '90%', maxWidth: '850px' }}>
-                <div style={{
-                  maxWidth: '100%',
-                  background: 'transparent',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
+                <div style={{maxWidth: '100%', background: 'transparent', display: 'flex', justifyContent: 'center'}}>
                   <img src="/placeholder.jpg" alt="Hubstaff Tracking" className="w-full h-full object-cover" style={{borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)', marginTop: '10px', marginBottom: '10px', maxWidth: '100%'}}/>
                 </div>
               </div>
@@ -301,7 +284,6 @@ const altText = i === 3
           </div>
         </section>
 
-        {/* Testimonials Section */}
         <TestimonialsSection />
       </main>
       <footer className="w-full py-6 bg-background">

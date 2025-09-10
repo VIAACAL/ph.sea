@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface VideoBackgroundProps {
   videoSrc: string;
@@ -8,14 +8,43 @@ interface VideoBackgroundProps {
 
 export function VideoBackground({ videoSrc }: VideoBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      setIsMobile(/iphone|ipad|ipod|android/.test(userAgent));
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
     // Ensure video plays when component mounts
-    if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.error("Video autoplay failed:", error);
-      });
-    }
+    const playVideo = async () => {
+      if (videoRef.current) {
+        try {
+          // For iOS, we need to load the video first
+          videoRef.current.load();
+          
+          // Try to play immediately
+          await videoRef.current.play();
+        } catch (error) {
+          console.error("Video autoplay failed:", error);
+          
+          // If autoplay fails, try again with user interaction
+          document.addEventListener('touchstart', () => {
+            videoRef.current?.play();
+          }, { once: true });
+        }
+      }
+    };
+    
+    playVideo();
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
   }, []);
 
   return (
@@ -27,6 +56,8 @@ export function VideoBackground({ videoSrc }: VideoBackgroundProps) {
         muted
         loop
         playsInline
+        preload="auto"
+        poster="/viaa-logo.png"
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.

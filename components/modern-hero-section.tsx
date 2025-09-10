@@ -89,7 +89,7 @@ export function ModernHeroSection() {
                   Email
                 </a>
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/61487216747" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center justify-center border border-white/30 bg-white/10 backdrop-blur-md shadow-lg text-white px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors w-full"

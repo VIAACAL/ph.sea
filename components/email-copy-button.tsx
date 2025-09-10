@@ -15,12 +15,12 @@ export function EmailCopyButton({ email }: { email: string }) {
 
   return (
     <Button 
-      variant="outline" 
+      variant="ghost" 
       size="icon" 
-      className="h-8 w-8" 
+      className="h-8 w-8 p-0 border-none bg-transparent hover:bg-transparent" 
       onClick={copyToClipboard}
     >
-      {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+      {copied ? <Check className="h-4 w-4 text-cyan-300" /> : <Copy className="h-4 w-4 text-cyan-300" />}
     </Button>
   );
 }

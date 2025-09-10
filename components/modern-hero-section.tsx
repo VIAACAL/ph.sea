@@ -8,6 +8,7 @@ import { EmailCopyButton } from "@/components/email-copy-button"
 export function ModernHeroSection() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [headerOpacity, setHeaderOpacity] = useState(0.025) // Start 10% more transparent (was 0.05)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,10 @@ export function ModernHeroSection() {
       } else {
         // Scrolling up - show header
         setIsHeaderVisible(true)
+        // Gradually increase transparency as user scrolls up
+        const scrollProgress = Math.min(currentScrollY / 200, 1) // Normalize scroll to 0-1 over 200px
+        const opacity = Math.max(0, 0.025 - (scrollProgress * 0.025)) // Fade from 2.5% to 0%
+        setHeaderOpacity(opacity)
       }
       
       setLastScrollY(currentScrollY)
@@ -33,23 +38,31 @@ export function ModernHeroSection() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 w-full border-b border-white/5 bg-background/5 backdrop-blur-md supports-[backdrop-filter]:bg-background/5 transition-transform duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center">
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 w-full border-b border-white/5 backdrop-blur-md supports-[backdrop-filter]:bg-background/5 transition-all duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}
+        style={{ backgroundColor: `rgba(0, 0, 0, ${headerOpacity})` }}
+      >
+        <div className="container flex h-16 items-center">
+          {/* VIAA Logo - Left side on both mobile and desktop */}
+          <div className="flex items-center flex-shrink-0">
             <img
               src="/viaa-logo.png"
               alt="VIAA Logo"
               className="h-12 sm:h-15 w-auto"
             />
           </div>
-          <div className="flex-1 flex justify-center max-w-md mx-auto px-4">
+          
+          {/* Pricing Link - Left on mobile, Center on desktop */}
+          <div className="flex-1 flex justify-start md:justify-center px-4">
             <nav className="flex gap-2 sm:gap-3 md:gap-6 overflow-x-auto no-scrollbar">
               <Link href="#pricing" className="text-xs sm:text-sm font-medium transition-colors hover:text-primary whitespace-nowrap">
                 Pricing
               </Link>
             </nav>
           </div>
-          <div className="flex items-center gap-3">
+          
+          {/* Empty right section for balance */}
+          <div className="flex items-center gap-3 flex-shrink-0">
             {/* Get Started button removed */}
           </div>
         </div>

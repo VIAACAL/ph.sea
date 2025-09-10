@@ -57,7 +57,6 @@ export function VideoBackground({ videoSrc }: VideoBackgroundProps) {
         loop
         playsInline
         preload="auto"
-        poster="/viaa-logo.png"
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.

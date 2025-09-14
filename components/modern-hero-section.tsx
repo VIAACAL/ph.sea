@@ -96,7 +96,7 @@ export function ModernHeroSection() {
             <div className="mb-8 max-w-md mx-auto">
               <div className="flex justify-center gap-4 mb-6">
                 <a 
-                  href="mailto:support@viaa.so" 
+                  href="mailto:opportunities@viaa.so" 
                   className="inline-flex items-center justify-center border border-white/30 bg-white/10 backdrop-blur-md shadow-lg text-white px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors w-full"
                 >
                   Email
@@ -112,17 +112,17 @@ export function ModernHeroSection() {
               </div>
               <div className="flex justify-center items-center gap-2 py-3">
                 <span className="text-white text-sm md:text-base">Email:</span>
-                <a href="mailto:support@viaa.so" className="text-cyan-300 hover:underline text-sm md:text-base">support@viaa.so</a>
-                <EmailCopyButton email="support@viaa.so" />
+                <a href="mailto:opportunities@viaa.so" className="text-cyan-300 hover:underline text-sm md:text-base">opportunities@viaa.so</a>
+                <EmailCopyButton email="opportunities@viaa.so" />
               </div>
             </div>
 
             
             {/* Software stack text */}
-            <p className="text-white/90 mb-6">Qualified in your software stack.</p>
+            <p className="text-white/90 mb-6">Seeking: Customer support talent across customer support and fulfillment systems for Shopify products.</p>
             
             {/* Software logos */}
-            <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
               {[
                 "freshdesk.png", "front.png", "gorgias.png", "intercom.png", 
                 "liveagent.png", "livechat.png", "reamaze.png", "zendesk.png", "zoho.png"
@@ -131,6 +131,26 @@ export function ModernHeroSection() {
                   <img 
                     src={`/${logo}`} 
                     alt={logo.split('.')[0]} 
+                    className="max-w-full max-h-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+            
+            {/* Fulfillment system logos */}
+            <div className="flex flex-wrap justify-center items-center gap-8">
+              {[
+                "logos_bundle 2/flowspace_logo.png", 
+                "logos_bundle 2/mintsoft_logo.png", 
+                "logos_bundle 2/shipbob_logo.png", 
+                "logos_bundle 2/shiphero_logo.png", 
+                "logos_bundle 2/shipmonk_logo.png", 
+                "logos_bundle 2/shipstation_logo.png"
+              ].map((logo, i) => (
+                <div key={i} className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center transition-all hover:scale-110 rounded-xl bg-white/10 backdrop-blur-md p-2 hover:bg-white/20">
+                  <img 
+                    src={`/${logo}`} 
+                    alt={logo.split('/').pop()?.split('.')[0] || logo} 
                     className="max-w-full max-h-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
